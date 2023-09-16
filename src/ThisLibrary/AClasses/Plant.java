@@ -3,8 +3,8 @@ package ThisLibrary.AClasses;
 import ThisLibrary.Interfaces.IBreathable;
 
 public class Plant implements IBreathable {
-    public int photosynthesis(int a, int b){
-        return a*a*b;
+    public int photosynthesis(int efficiency, int speed){
+        return efficiency*speed;
     }
 
     @Override

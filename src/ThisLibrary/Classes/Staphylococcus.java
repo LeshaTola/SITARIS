@@ -16,8 +16,8 @@ public class Staphylococcus extends Bacteria implements IGrowable, IFeelable {
     }
 
     @Override
-    public void feel(String food) {
-        System.out.println("I eat: " + food);
+    public void feel(String feel) {
+        System.out.println("I eat: " + feel);
     }
 
     @Override

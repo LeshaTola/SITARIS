@@ -10,8 +10,8 @@ public class Robot extends AI implements IFeelable {
     }
 
     @Override
-    public void feel(String food) {
-        System.out.println("Жестко чувствую: " + food);
+    public void feel(String feel) {
+        System.out.println("Жестко чувствую: " + feel);
     }
 
     @Override

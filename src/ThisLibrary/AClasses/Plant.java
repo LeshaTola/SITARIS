@@ -8,12 +8,12 @@ public class Plant implements IBreathable {
     }
 
     @Override
-    public int live(int a, int b) {
-        return (int)(Math.pow(a,b));
+    public void live() {
+        System.out.println("I love sun");
     }
 
     @Override
-    public int breath(int a, int b) {
-        return a-b;
+    public void breath(int time) {
+        System.out.println("I generate oxygen every " + time + " seconds");
     }
 }

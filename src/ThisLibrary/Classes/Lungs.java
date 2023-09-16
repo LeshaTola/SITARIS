@@ -4,17 +4,18 @@ import ThisLibrary.Interfaces.IBreathable;
 
 public class Lungs implements IBreathable {
 
-    public float cough(boolean flag){
-        return flag == true?1f:0f;
+    public String cough(boolean flag){
+        return flag == true?"kgh-kgh":"...";
     }
 
     @Override
-    public int live(int a, int b) {
-        return a+b;
+    public void live() {
+        System.out.println("It is not coronaTime");
     }
 
     @Override
-    public int breath(int a, int b) {
-        return a*b;
+    public void breath(int time) {
+        var useableTime =(float)(time/2);
+        System.out.println("breath in: "+ useableTime + " breath out: "+ useableTime );
     }
 }

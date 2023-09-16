@@ -6,7 +6,7 @@ import ThisLibrary.Interfaces.IHearable;
 public class AI implements ISeeable, IHearable {
 
     public boolean TellTruth(String s){
-        if(s.equals("Yes")){
+        if(s.equals("Am i a gay")){
         return true;
         }
         else{
@@ -15,17 +15,17 @@ public class AI implements ISeeable, IHearable {
     }
 
     @Override
-    public int live(int a, int b) {
-        return a*2+b/2;
+    public void live() {
+        System.out.println("bip bip bip");
     }
 
     @Override
-    public void see(String s1) {
-
+    public void hear(String message) {
+        System.out.println("My microphone hear "+ message);
     }
 
     @Override
-    public int hear(int a, int b) {
-        return 1000 + a+b;
+    public void see(String object) {
+        System.out.println("My cameras sees: "+ object);
     }
 }

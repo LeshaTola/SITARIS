@@ -5,17 +5,17 @@ import ThisLibrary.Interfaces.IFeelable;
 
 public class Robot extends AI implements IFeelable {
 
-    public void wroteSymphony(String s){
-        System.out.println(s+ " another string function (f14)");
+    public String wroteSymphony(){
+        return " Robot can not write Symphony";
     }
 
     @Override
-    public void feel(String s) {
-        System.out.println(s+ " another string function (f10)");
+    public void feel(String food) {
+        System.out.println("Жестко чувствую: " + food);
     }
 
     @Override
-    public String Eat(String s) {
-        return "Hello World and "+ s;
+    public String eat(String food) {
+        return "convert "+ food+ " to energy";
     }
 }

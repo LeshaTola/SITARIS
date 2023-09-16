@@ -4,21 +4,13 @@ import ThisLibrary.Interfaces.IFeadable;
 
 public class Bacteria implements IFeadable {
 
-    public void multiply(boolean flag) {
-        if (flag) {
-            System.out.println("lol");
-        } else {
-            System.out.println("kek");
-        }
+    @Override
+    public void live() {
+        System.out.println("blop blip blap");
     }
 
     @Override
-    public int live(int a, int b) {
-        return b/a;
-    }
-
-    @Override
-    public String Eat(String a) {
-        return "new String" + a;
+    public String eat(String food) {
+        return "Tasty "+ food;
     }
 }

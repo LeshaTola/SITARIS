@@ -6,32 +6,32 @@ import ThisLibrary.Interfaces.IGrowable;
 
 public class Staphylococcus extends Bacteria implements IGrowable, IFeelable {
 
-    public String victim(String s){
-
-        return "F15 is create this string: "+ s;
-    }
-    @Override
-    public void feel(String s) {
-        see(s+" Этот метод состоит из вызова метода f4");
+    public void victim(){
+        System.out.println("Krov matuki ybistva");
     }
 
     @Override
-    public int breath(int a, int b) {
-        return a*b;
+    public void breath(int time) {
+        System.out.println("Breath by leather every "+ time);
     }
 
     @Override
-    public void see(String s1) {
-        System.out.println(s1);
-    }
-
-    @Override
-    public int hear(int a, int b) {
-        return 0;
+    public void feel(String food) {
+        System.out.println("I eat: " + food);
     }
 
     @Override
     public void grow() {
-        System.out.println("Booo");
+        System.out.println("Grow by eating ");
+    }
+
+    @Override
+    public void hear(String message) {
+        System.out.println("Hear "+ message + "by ...");
+    }
+
+    @Override
+    public void see(String object) {
+        System.out.println("see: " + object);
     }
 }

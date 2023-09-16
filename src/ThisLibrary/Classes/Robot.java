@@ -1,21 +1,21 @@
 package ThisLibrary.Classes;
 
-import ThisLibrary.AClasses.AKL11;
-import ThisLibrary.Interfaces.I10;
+import ThisLibrary.AClasses.AI;
+import ThisLibrary.Interfaces.IFeelable;
 
-public class KL14 extends AKL11 implements I10 {
+public class Robot extends AI implements IFeelable {
 
-    public void f14(String s){
+    public void wroteSymphony(String s){
         System.out.println(s+ " another string function (f14)");
     }
 
     @Override
-    public void f10(String s) {
+    public void feel(String s) {
         System.out.println(s+ " another string function (f10)");
     }
 
     @Override
-    public String f3(String s) {
+    public String Eat(String s) {
         return "Hello World and "+ s;
     }
 }
